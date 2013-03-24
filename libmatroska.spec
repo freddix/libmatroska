@@ -1,11 +1,11 @@
 Summary:	Extensible Binary Meta Language access library
 Name:		libmatroska
-Version:	1.3.0
+Version:	1.4.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://dl.matroska.org/downloads/libmatroska/%{name}-%{version}.tar.bz2
-# Source0-md5:	f4a8c411f09d39c754eb726efd616043
+# Source0-md5:	5b83155019589b04a49f9db923b5bf74
 Patch0:		%{name}-makefile.patch
 URL:		http://www.matroska.org/
 BuildRequires:	libebml-devel

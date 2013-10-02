@@ -1,11 +1,11 @@
 Summary:	Extensible Binary Meta Language access library
 Name:		libmatroska
-Version:	1.4.0
+Version:	1.4.1
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://dl.matroska.org/downloads/libmatroska/%{name}-%{version}.tar.bz2
-# Source0-md5:	5b83155019589b04a49f9db923b5bf74
+# Source0-md5:	f61b2e5086f4bb9d24a43cc8af43a719
 Patch0:		%{name}-makefile.patch
 URL:		http://www.matroska.org/
 BuildRequires:	libebml-devel
@@ -25,6 +25,8 @@ in old parsers.
 Summary:	Header files for matroska library
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	libebml-devel
+Requires:	libstdc++-devel
 
 %description devel
 Header files for matroska library.
@@ -66,6 +68,5 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libmatroska.so
-%{_libdir}/libmatroska.la
 %{_includedir}/matroska
 
